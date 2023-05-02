@@ -5,8 +5,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
-import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry";
 import * as THREE from "three";
 
 let scene = new THREE.Scene();
@@ -21,28 +19,7 @@ let box = new THREE.Mesh(boxGeometry, boxMaterial);
 box.position.set(0, 0, -2);
 scene.add(box);
 
-// Text
-const fontLoader = new FontLoader();
-const textMaterial = new THREE.MeshPhongMaterial({ color: "white" });
-fontLoader.load(
-  "https://threejs.org/examples/fonts/helvetiker_regular.typeface.json",
-  function (font) {
-    const textGeometry = new TextGeometry("Hazenhower - Alessio Aquilanti", {
-      font: font,
-      size: 0.5,
-      height: 0.1,
-      curveSegments: 12,
-      bevelEnabled: true,
-      bevelThickness: 0.03,
-      bevelSize: 0.02,
-      bevelOffset: 0,
-      bevelSegments: 5,
-    });
-    const textMesh = new THREE.Mesh(textGeometry, textMaterial);
-    textMesh.position.set(-4, 1, -2);
-    scene.add(textMesh);
-  }
-);
+
 
 let ambientLight = new THREE.DirectionalLight("#ffffff", 1);
 ambientLight.position.set(-1, 2, 4);

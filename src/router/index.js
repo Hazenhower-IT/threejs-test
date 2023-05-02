@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Home from "../views/Home.vue"
 import Cube from "../components/Cube.vue"
 import XrCube from "../components/XrCube.vue"
 import XrCar from "../components/XrCar.vue"
+import XrModelOverlay from "../components/XrModelOverlay.vue"
+import SkyAndRain from "../components/SkyAndRain.vue"
 
 
 const router = createRouter({
@@ -10,7 +13,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Cube
+      component: Home
     },
 
     {
@@ -29,6 +32,18 @@ const router = createRouter({
       path: '/xr-car',
       name: 'xr-car',
       component: XrCar
+    },
+
+    {
+      path: '/xr-model-overlay',
+      name: 'xr-model-overlay',
+      component: XrModelOverlay
+    },
+
+    {
+      path: '/sky-and-rain',
+      name: 'sky-and-rain',
+      component: SkyAndRain
     },
   ]
 })
