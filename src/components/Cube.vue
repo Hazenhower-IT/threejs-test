@@ -10,13 +10,14 @@ let controls
 let canvasRef = ref()
 
 let boxGeometry = new THREE.BoxGeometry(1,1,1)
-let boxMaterial = new THREE.MeshStandardMaterial({color:"mediumpurple"})
+let boxMaterial = new THREE.MeshPhongMaterial({color:"mediumpurple"})
 let  box = new THREE.Mesh(boxGeometry, boxMaterial)
 box.position.set(0, 0, -2)
 
 scene.add(box)
 
-let ambientLight = new THREE.AmbientLight("#ffffff",1)
+let ambientLight = new THREE.DirectionalLight("#ffffff",1)
+ambientLight.position.set(-1, 2, 4)
 scene.add(ambientLight)
 
 let camera = new THREE.PerspectiveCamera(
@@ -32,6 +33,7 @@ scene.add(camera)
 
 let loop = () => {
     box.rotation.y += 0.02;
+    box.rotation.x += 0.02;
     controls.update()
     renderer.render(scene, camera)
     
