@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Cube from "../components/Cube.vue"
 import XrCube from "../components/XrCube.vue"
+import XrCar from "../components/XrCar.vue"
 
 
 const router = createRouter({
@@ -24,6 +25,11 @@ const router = createRouter({
       component: XrCube
     },
     
+    {
+      path: '/xr-car',
+      name: 'xr-car',
+      component: XrCar
+    },
   ]
 })
 
