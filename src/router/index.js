@@ -5,6 +5,7 @@ import XrCube from "../components/XrCube.vue"
 import XrCar from "../components/XrCar.vue"
 import XrModelOverlay from "../components/XrModelOverlay.vue"
 import SkyAndRain from "../components/SkyAndRain.vue"
+import SkyBox from "../components/SkyBox.vue"
 
 
 const router = createRouter({
@@ -44,6 +45,12 @@ const router = createRouter({
       path: '/sky-and-rain',
       name: 'sky-and-rain',
       component: SkyAndRain
+    },
+
+    {
+      path: '/sky-box',
+      name: 'sky-box',
+      component: SkyBox
     },
   ]
 })

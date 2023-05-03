@@ -124,7 +124,7 @@
             transparent: true
         })
 
-        for(let p=0; p<20; p++){
+        for(let p=0; p<30; p++){
             let cloud = new THREE.Mesh(cloudGeo, cloudMaterial)
             cloud.position.set(
                 Math.random()*800 - 400,
