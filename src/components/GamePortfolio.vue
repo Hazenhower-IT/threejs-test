@@ -168,9 +168,11 @@
     //controls.enableDamping = true;
     person = new FirstPersonControls(camera, renderer.domElement)
     person.movementSpeed = 50
-    person.lookVertical = false
+    person.lookVertical = true
     person.lookSpeed = 0.2
-    
+    person.constrainVertical = true
+    person.verticalMax = Math.PI / 2.3
+    person.verticalMin = Math.PI / 1.7
   
     window.addEventListener("resize", resizeCallback);
   });
