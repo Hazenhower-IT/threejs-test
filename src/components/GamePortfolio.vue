@@ -168,7 +168,7 @@
     //controls.enableDamping = true;
     person = new FirstPersonControls(camera, renderer.domElement)
     person.movementSpeed = 50
-    person.lookVertical = true
+    person.lookVertical = false
     person.lookSpeed = 0.2
     person.constrainVertical = true
     person.verticalMax = Math.PI / 2.3
