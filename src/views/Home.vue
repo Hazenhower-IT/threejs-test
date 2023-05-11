@@ -5,175 +5,295 @@
     <main>
       
       <header>
-        <h1>Alessio Aquilanti</h1>
-        <p>🚀 Welcome to my website!</p>
+        <h2> Hi! I'm <br> Alessio Aquilanti</h2>
+        <p style="background-color: rgb(0,0,0,.9);">🚀 Welcome to my website!</p>
       </header>
 
 
       <blockquote>
-        <p>I like to explore new technologies and make things happen</p>
+        <p style="text-align: center;">I like to explore new technologies and make things happen</p>
       </blockquote>
 
       <section>
         <h2>📜 Bio </h2>
-        <p>
-          Ho intrapreso un percorso di studi che mi ha gia portato al conseguimento delle prime certificazioni. Attualmente la mia formazione
-          è rivolta allo sviluppo di soluzioni Machine Learning e AI Cloud Native in azure, nonchè allo sviluppo di siti internet e webapp di
-          ultima generazione , con elementi 3D, altamente scalabili e dinamiche utilizzando i servizi cloud.
+        <p style="background-color: rgb(0,0,0,.9); text-align: center;">
+          Hardworking and motivated, I have a predisposition for the study of computer science subjects and the use of technological tools and  
+          a good attitude towards teamwork and managing a work group thanks to the experience gained by training new employees. 
+          My ideal job position is in a structure that allows me to test myself and offers me the opportunity for professional and educational 
+          growth. I consider myself both flexible and determined, and it is precisely determination that allows me to achieve my goals.
+
+          I have embarked on a course of study that has already led me to obtain my first certifications. Currently, my training is focused on 
+          the development of cutting-edge websites and web apps with 3D elements, highly scalable and dynamic using cloud services, and 
+          the development of Machine Learning and Cloud Native AI solutions.
         </p>
 
       </section>
 
-      <section class="light">
-        <h2>👩🏽‍🚀 Projects</h2>
+      <section>
+        <h2>🛠️ Skills</h2>
 
-        <ul>
+        <h3>VueJS3 | Pinia | ThreeJS | Firebase | Firestore Database | GitHub | CI-CD Pipeline | Cloud Computing | Azure Cloud | Artificial Intelligence | Python | Data Science | Javascript | HTML | CSS | Social Media | Outlook | Gmail | Digital Marketing </h3>
+        
+
+      </section>
+
+      <section class="left">
+        <h2>💻Projects</h2>
+
+        <ul style="list-style: none;">
           
           
           <li>
-            <h3><a href="https://single-page-app-3d.web.app/">Single Page App with 3D element</a></h3>
+            <h3 class="remove-bg"><a href="https://single-page-app-3d.web.app/">Single Page App with 3D element</a></h3>
             <h4>An Example Of Simple Page Application with 3D Element Inside</h4>
-            <h4>I Know that the 3d model are not well positioned, i'm at work for creating a reusable gui for fast element editing</h4>
-            <h5>Technologies</h5>
-            <ul>
-              <li><h6>Vue3</h6></li>
-              <li><h6>ThreeJS</h6></li>
-              <li><h6>Firebase Hosting</h6></li>
+            <h4>I Know that the 3d model are not well positioned, i'm at work for creating a reusable gui component for fast element editing</h4>
+            <h4>Technologies:</h4>
+            <ul style="list-style:none; background-color: unset;">
+              <li><h4>-Vue3</h4></li>
+              <li><h4>-ThreeJS</h4></li>
+              <li><h4>-Firebase Hosting</h4></li>
             </ul>
           </li>
 
+          <hr/>
+
           <li>
-            <h3><a href="https://hazenhower-portfolio.web.app/game/">Game Portfolio - INCOMPLETE</a></h3>
+            <h3 style="background-color: unset;"><a href="https://hazenhower-portfolio.web.app/game/">Game Portfolio - 🛠️WORK IN PROGRESS🛠️</a></h3>
             <h4>My Personal Game Portfolio Idea (NOT YET COMPLETED)</h4>
-            <h5>Technologies</h5>
-            <ul>
-              <li><h6>Vue3</h6></li>
-              <li><h6>ThreeJS</h6></li>
-              <li><h6>Firebase Hosting</h6></li>
+            <h4>Technologies:</h4>
+            <ul style="list-style:none; background-color: unset;">
+              <li><h4>-Vue3</h4></li>
+              <li><h4 >-ThreeJS</h4></li>
+              <li><h4 >-Firebase Hosting</h4></li>
             </ul>
           </li>
 
+          <hr/>
+
           <li>
-            <h3><a href="https://lorenzofederici-guitarist.web.app/">Lorenzo Federici Guitarist</a></h3>
+            <h3 style="background-color: unset;"><a href="https://lorenzofederici-guitarist.web.app/">Lorenzo Federici Guitarist</a></h3>
             <h4>A Guitarist Portfolio Website</h4>
-            <h5>Technologies</h5>
-            <ul>
-              <li><h6>Vue3</h6></li>
-              <li><h6>Pinia</h6></li>
-              <li><h6>BulmaCSS</h6></li>
-              <li><h6>Firebase Hosting</h6></li>
-              <li><h6>Firebase Storage</h6></li>
-              <li><h6>Firebase Firestore Database</h6></li>
-              <li><h6>FIrebase Authentication</h6></li>
+            <h4>Technologies:</h4>
+            <ul style="list-style:none; background-color: unset;">
+              <li><h4>-Vue3</h4></li>
+              <li><h4>-Pinia</h4></li>
+              <li><h4>-BulmaCSS</h4></li>
+              <li><h4>-Firebase Hosting</h4></li>
+              <li><h4>-Firebase Storage</h4></li>
+              <li><h4>-Firebase Firestore Database</h4></li>
+              <li><h4>-FIrebase Authentication</h4></li>
             </ul>
           </li>
 
+          <hr/>
+
           <li>
-            <h3><a href="https://anthill-workflow.web.app/">Anthill Workflow</a></h3>
+            <h3 style="background-color: unset;"><a href="https://anthill-workflow.web.app/">Anthill Workflow</a></h3>
             <h4>Task Manager App</h4>
-            <h5>Technologies</h5>
-            <ul>
-              <li><h6>Vue3</h6></li>
-              <li><h6>Pinia</h6></li>
-              <li><h6>BulmaCSS</h6></li>
-              <li><h6>Firebase Hosting</h6></li>
-              <li><h6>Firebase Firestore Database</h6></li>
-              <li><h6>FIrebase Authentication</h6></li>
+            <h4>Technologies:</h4>
+            <ul style="background-color: unset; list-style:none;">
+              <li><h4>-Vue3</h4></li>
+              <li><h4>-Pinia</h4></li>
+              <li><h4>-BulmaCSS</h4></li>
+              <li><h4>-Firebase Hosting</h4></li>
+              <li><h4>-Firebase Firestore Database</h4></li>
+              <li><h4>-FIrebase Authentication</h4></li>
             </ul>
           </li>
 
 
         </ul>
-          
+        </section>
+        <section >
         
 
         <h2>🏆 Certificazioni </h2>
-
-        <h3><a href="#">Responsive Web Design</a></h3>
-        <h4>Released By FreeCodeCamp | 03/2022</h4>
+        
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://www.freecodecamp.org/certification/hazenhower/responsive-web-design">Responsive Web Design</a></h3>
+          <h4>Released By FreeCodeCamp | 03/2022</h4>
+        </div>
+        
         <hr/>
 
-        <h3><a href="#">JavaScript Algorithms and Data Structures</a></h3>
-        <h4>Released By FreeCodeCamp | 09/2022</h4>
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://www.freecodecamp.org/certification/hazenhower/javascript-algorithms-and-data-structures">JavaScript Algorithms and Data Structures</a></h3>
+          <h4>Released By FreeCodeCamp | 09/2022</h4>
+        </div>
+
         <hr/>
 
-        <h3><a href="#">Career Essentials in Software Development by Microsoft and Linkedin</a></h3>
-        <h4>Released By Microsoft | 10/2022</h4>
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://www.linkedin.com/learning/certificates/4451808e971640015f54a75cb5b8e63156ea62e3a2ee85b8df75e60e8de05331?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BG%2BxP7DQgQ8KwrhbM0bcLbQ%3D%3D">Career Essentials in Software Development by Microsoft and Linkedin</a></h3>
+          <h4>Released By Microsoft | 10/2022</h4>
+        </div>
+
         <hr/>
 
-        <h3><a href="#">Microsoft Certified: Azure Fundamentals</a></h3>
-        <h4>Released By Microsoft | 10/2022</h4>
+        <div style="background-color:rgb(0,0,0,.9);">  
+          <h3 style="background-color: unset;"><a href="https://www.credly.com/badges/80bd5bc9-e92c-4e7d-b835-b3ca394a4933/linked_in_profile">Microsoft Certified: Azure Fundamentals</a></h3>
+          <h4>Released By Microsoft | 10/2022</h4>
+        </div>
+        
         <hr/>
 
-        <h3><a href="#">Microsoft Certified: Azure AI Fundamentals</a></h3>
-        <h4>Released By Microsoft | 11/2022</h4>
+        <div style="background-color:rgb(0,0,0,.9);">  
+          <h3 style="background-color: unset;"><a href="https://www.credly.com/badges/7c240efa-bf4c-4a6e-b1f3-f8076cee8b8c/linked_in_profile">Microsoft Certified: Azure AI Fundamentals</a></h3>
+          <h4>Released By Microsoft | 11/2022</h4>
+        </div>
+
         <hr/>
 
-        <h3><a href="#">Microsoft 365 Certified: Teams Administrator Associate</a></h3>
-        <h4>Released By Microsoft | 12/2022 until 12/2023</h4>
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://www.credly.com/badges/4ecb6cc2-a366-43a6-a636-c45cc696aa9d/linked_in_profile">Microsoft 365 Certified: Teams Administrator Associate</a></h3>
+          <h4>Released By Microsoft | 12/2022 until 12/2023</h4>
+        </div>
+
         <hr/>
 
-        <h3><a href="#">Microsoft Certified: Azure Data Fundamentals</a></h3>
-        <h4>Released By Microsoft | 12/2022</h4>
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://www.credly.com/badges/16e22fd6-4953-44af-a0e2-d55eaaa3bac2/linked_in_profile">Microsoft Certified: Azure Data Fundamentals</a></h3>
+          <h4>Released By Microsoft | 12/2022</h4>
+        </div>
+
         <hr/>
        
-        <h3><a href="#">Python 101 for Data Science</a></h3>
-        <h4>Released By IMB | 01/2023</h4>
-        <hr/>
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://courses.cognitiveclass.ai/certificates/4448f764d2064475946b1f08fe6c5f64">Python 101 for Data Science</a></h3>
+          <h4>Released By IMB | 01/2023</h4>
+        </div>
         
-        <h3><a href="#">Python for Data Science</a></h3>
-        <h4>Released By IMB | 01/2023</h4>
         <hr/>
 
-        <h3><a href="#">Data Analysis with Python</a></h3>
-        <h4>Released By IMB | 01/2023</h4>
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://www.credly.com/badges/9132e998-09ef-45d9-8ed6-7f9b4a8f0b1b/linked_in_profile">Python for Data Science</a></h3>
+          <h4>Released By IMB | 01/2023</h4>
+        </div>
+
         <hr/>
 
-        <h3><a href="#">Data Visualizzation With Python</a></h3>
-        <h4>Released By IMB | 01/2023</h4>
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://courses.cognitiveclass.ai/certificates/70c63b5b359849cd8b987d57dfc74e2f">Data Analysis with Python</a></h3>
+          <h4>Released By IMB | 01/2023</h4>
+        </div>
+
         <hr/>
 
-        <h3><a href="#">Applied Data Science with Python - Level 2</a></h3>
-        <h4>Released By IMB | 01/2023 </h4>
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://www.credly.com/badges/ee16d82f-8bd3-477b-a292-a3d89a3db90d/linked_in_profile">Data Visualizzation With Python</a></h3>
+          <h4>Released By IMB | 01/2023</h4>
+        </div>
+
         <hr/>
 
-        <h3><a href="#">Microsoft Certified: Azure Data Scientist Associate</a></h3>
-        <h4>Released By Microsoft | 02/2023 until 02/2024</h4>
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="#">Applied Data Science with Python - Level 2</a></h3>
+          <h4>Released By IMB | 01/2023 </h4>
+        </div>
+
         <hr/>
 
-        <h3><a href="#">Machine Learning with Python - Level 1</a></h3>
-        <h4>Released By IMB | 03/2023 </h4>
-        <hr/> 
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://www.credly.com/badges/0015920b-dd26-454c-b9a7-f9119ecf5be9/linked_in_profile">Microsoft Certified: Azure Data Scientist Associate</a></h3>
+          <h4>Released By Microsoft | 02/2023 until 02/2024</h4>
+        </div>
 
-        <h3><a href="#">Fondamenti Di Marketing Digitale</a></h3>
-        <h4>Released By Google Digital Training | 03/2023</h4>
+        <hr/>
+
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://credly.com/badges/e8b76ba6-09c3-4373-8d33-cd9fefe97e76/linked_in_profile">Machine Learning with Python - Level 1</a></h3>
+          <h4>Released By IMB | 03/2023 </h4>
+        </div>
+
+        <hr/>
+
+        <div style="background-color:rgb(0,0,0,.9);">
+          <h3 style="background-color: unset;"><a href="https://learndigital.withgoogle.com/digitaltraining/validate-certificate-code">Fondamenti Di Marketing Digitale</a></h3>
+          <h4>Released By Google Digital Training | 03/2023</h4>
+          <h4>Credential ID: YTG Y3Y SNK</h4>
+        </div>
+
         <hr/>
 
       </section>
 
-      <blockquote>
-        <p>The best way out is always through <br>-Robert Frost</p>
+      <blockquote style="text-align: center;">
+        <p>"Once we accept our limits, we go beyond them."
+          <br>
+          <br>
+          -Albert Einstein
+        </p>
+
       </blockquote>
 
-      <section class="left">
-        <h2>🌮 Work History</h2>
+      
 
-        <h3>McDonalds</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <h3>Burger King</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <h3>Taco Bell</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <section class="left" >
+        <h2>💼 Work History</h2>
+
+        <div style="background-color: rgb(0,0,0,.9);">
+          <h3>Caffè Mattia - Barista</h3>
+          <h4>August 2019 | September 2022</h4>
+          <ul style="background-color: unset;">
+            <li>Cashier and attendant for services such as phone top-ups and bill payments.</li>
+            <li>Attendant at the customer relations and preparation of non-alcoholic drinks, liquors and cocktails.</li>
+            <li>Warehouse management and merchandise arrangement.</li>
+            <li>Training and supervision of new staff members.</li>
+            <li>Work shift organization with colleagues.</li>
+            <li>Bar area setup in relation to the aperitif buffet.</li>
+            <li>Organization and preparation of pre-opening service.</li>
+          </ul>
+        </div>
+
+        <div style="background-color: rgb(0,0,0,.9);">
+          <h3>Soc.Coop.Log12 in c/o SDA EXPRESS - Warehouse worker</h3>
+          <h4>January 2019 | March 2019</h4>
+          <ul style="background-color: unset;">
+            <li>Preparation of packages containing items ordered by customers.</li> 
+          </ul>
+        </div>
+
+        <div style="background-color: rgb(0,0,0,.9);">
+          <h3>Through cooperative “Orion” at “G.Ferrari” -  Warehouse worker</h3>
+          <h4>September 2017 | June 2018</h4>
+          <ul style="background-color: unset;">
+            <li>Preparation of packages containing items ordered by customers.</li> 
+            <li>Loading and unloading of goods.</li>
+            <li>Checking of accompanying documents (DDT).</li>
+          </ul>
+        </div>
+
+        <div style="background-color: rgb(0,0,0,.9);">
+          <h3>Del Ninno Investigazioni dal 1927 - Web Designer</h3>
+          <h4> February | March 2017</h4>
+          <ul style="background-color: unset;">
+            <li>I made changes to the website by removing empty pages, adding the correct references to links for redirection to other pages, and implemented a “blog” section.</li> 
+            <li>Technologies Used: HTML, CSS, Wordpress.</li>
+            <li>Creation of profiles for social channels such as Facebook, Twitter and Instagram according to customer needs.</li>
+          </ul>
+        </div>
+        
+        <div style="background-color: rgb(0,0,0,.9);">
+          <h3>Sicomut Sud - Web Designer</h3>
+          <h4> April | May 2015</h4>
+          <ul style="background-color: unset;">
+            <li>Design and implementation of the website according to customer needs.</li> 
+            <li>Technologies Used: CMS, specifically Wix.</li>
+          </ul>
+        </div>
+
+        <div style="background-color: rgb(0,0,0,.9);">
+          <h3>MC Power - Developer (School Internship)</h3>
+          <h4>July 2014</h4>
+          <ul style="background-color: unset;">
+            <li>Design and implementation of an application for the automatic compilation of DDT (transport document).</li> 
+            <li>Technologies Used: Visual Basic.</li>
+          </ul>
+        </div>
 
       </section>
 
-      <blockquote>
+      <blockquote style="text-align: center;">
         <p>Thanks for watching!</p>
       </blockquote>
 
@@ -283,7 +403,7 @@
   
     renderer.setAnimationLoop(loop)
 
-    const spaceTexture = new THREE.TextureLoader().load("/space2.jpg")
+    const spaceTexture = new THREE.TextureLoader().load("/costellazione.jpg")
     scene.background = spaceTexture
 
     const hazenTexture = new THREE.TextureLoader().load("/cv2-2.jpg")
@@ -328,7 +448,7 @@
 
     
     :root {
-  --dark-bg: rgba(15, 15, 15, 0.7);
+  --dark-bg: rgba(0, 0, 0, .9);
   --spacing: 350px;
 
   font-family: brandon-grotesque, sans-serif;
@@ -354,8 +474,13 @@ h1, h2, h3, blockquote {
   font-family: elevon, sans-serif;
   font-weight: 700;
   font-style: normal;
-  background-color: rgb(0,0,0,0.5);
-  
+  background-color: rgb(0,0,0,.9);
+}
+h2{
+  text-align: center;
+}
+ul{
+  background-color: rgb(0,0,0,.9);
 }
 
 canvas {
@@ -390,9 +515,9 @@ canvas {
     margin-bottom: var(--spacing);
   }
 
-  blockquote, p {
+  blockquote {
     color:white;
-    background-color: rgb(0,0,0,0.5);
+    background-color: rgb(0,0,0,.9);
     font-size: 4rem;
     display: inline;
     line-height: 1;
@@ -400,5 +525,9 @@ canvas {
 
   .left {
     grid-column: 6 / 12;
+  }
+
+  .remove-bg{
+    background-color: unset;
   }
   </style>
