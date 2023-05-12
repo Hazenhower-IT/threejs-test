@@ -183,7 +183,7 @@
 
     //UPLOADING 3D ELEMENTS
     const gltfLoader = new GLTFLoader()
-    gltfLoader.load('./models/house/scene.gltf', (model) =>{
+    gltfLoader.load('/models/house/scene.gltf', (model) =>{
       loadedModel = model.scene.children[0]
       house1 = loadedModel.clone()
       house1.name = "house1"
@@ -194,7 +194,7 @@
     })
 
     // SHOPS
-    gltfLoader.load('./models/music-store/scene.gltf', (model) =>{
+    gltfLoader.load('/models/music-store/scene.gltf', (model) =>{
       loadedModel = model.scene.children[0]
       musicStore = loadedModel.clone()
       musicStore.name = "musicStore"
@@ -205,7 +205,7 @@
       scene.add(musicStore)
     })
 
-    gltfLoader.load('./models/small-game-store/scene.gltf', (model) =>{
+    gltfLoader.load('/models/small-game-store/scene.gltf', (model) =>{
       loadedModel = model.scene.children[0]
       gameStore = loadedModel.clone()
       gameStore.name = "gameStore"
@@ -217,7 +217,7 @@
       scene.add(gameStore)
     })
 
-    gltfLoader.load('./models/arcade-city/scene.gltf', (model) =>{
+    gltfLoader.load('/models/arcade-city/scene.gltf', (model) =>{
       loadedModel = model.scene.children[0]
       arcadeCity = loadedModel.clone()
       arcadeCity.name = "arcadeCity"
@@ -227,7 +227,7 @@
       scene.add(arcadeCity)
     })
 
-    gltfLoader.load('./models/deployos-hermanos/scene.gltf', (model) =>{
+    gltfLoader.load('/models/deployos-hermanos/scene.gltf', (model) =>{
       loadedModel = model.scene.children[0]
       deployosHermanos = loadedModel.clone()
       deployosHermanos.name = "deployosHermanos"
