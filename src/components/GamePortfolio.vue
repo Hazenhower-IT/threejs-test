@@ -108,7 +108,7 @@
     0.1, //near plane
     3000 //far plane
   );
-  camera.position.y = 10;
+  camera.position.y = 20;
   camera.position.z = 500;
   camera.position.x = 0;
   scene.add(camera);
@@ -187,7 +187,7 @@
       loadedModel = model.scene.children[0]
       house1 = loadedModel.clone()
       house1.name = "house1"
-      house1.scale.set(0.3,0.3,0.3)
+      house1.scale.set(0.35,0.35,0.35)
       house1.position.set(-250,0,25)
 
       scene.add(house1)
@@ -198,7 +198,7 @@
       loadedModel = model.scene.children[0]
       musicStore = loadedModel.clone()
       musicStore.name = "musicStore"
-      musicStore.scale.set(15,15,15)
+      musicStore.scale.set(20,20,20)
       musicStore.position.set(-180,0,300)
       musicStore.rotation.z += Math.PI /2
 
@@ -209,8 +209,8 @@
       loadedModel = model.scene.children[0]
       gameStore = loadedModel.clone()
       gameStore.name = "gameStore"
-      gameStore.scale.set(.5,.5,.5)
-      gameStore.position.set(0,0,-150)
+      gameStore.scale.set(.6,.6,.6)
+      gameStore.position.set(-100,0,-150)
       gameStore.rotation.z = Math.PI
       
 
@@ -221,8 +221,9 @@
       loadedModel = model.scene.children[0]
       arcadeCity = loadedModel.clone()
       arcadeCity.name = "arcadeCity"
-      arcadeCity.scale.set(3,3,3)
-      arcadeCity.position.set(450,0,-150)
+      arcadeCity.scale.set(1.5,1.5,1.5)
+      arcadeCity.position.set(350,27,10)
+      arcadeCity.rotation.z += -Math.PI /2
       
       scene.add(arcadeCity)
     })
@@ -231,7 +232,7 @@
       loadedModel = model.scene.children[0]
       deployosHermanos = loadedModel.clone()
       deployosHermanos.name = "deployosHermanos"
-      deployosHermanos.scale.set(10,10,10)
+      deployosHermanos.scale.set(15,15,15)
       deployosHermanos.position.set(150,0.01,-150)
       deployosHermanos.rotation.z += -Math.PI / 2   
       scene.add(deployosHermanos)
