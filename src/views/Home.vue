@@ -369,12 +369,14 @@
   let ambientLight = new THREE.AmbientLight(0xffffff)
   scene.add(pointLight, ambientLight)
 
+  /*  UNCOMMENT FOR HELPER
   let lightHelper = new THREE.PointLightHelper(pointLight)
   scene.add(lightHelper)
   
   let gridHelper = new THREE.GridHelper(200,50)
   scene.add(gridHelper)
-  
+  */
+
   let loop = () => {
 
     earth.rotation.y += 0.005

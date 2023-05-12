@@ -5,14 +5,13 @@
   <script setup>
   import { ref, onMounted, onUnmounted } from "vue"
   import { FirstPersonControls } from "three/examples/jsm/controls/FirstPersonControls"
-  import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
   import { FontLoader } from "three/examples/jsm/loaders/FontLoader"
   import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry"
+  import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
   import * as THREE from "three"
   
   let scene = new THREE.Scene()
   let renderer
-  let controls
   
   let canvasRef = ref();
   
@@ -22,6 +21,16 @@
   
   var person
   var clock = new THREE.Clock()
+  
+  let loadedModel
+
+  //Buildings
+  let house1
+  //Shops
+  let musicStore
+  let gameStore
+  let arcadeCity
+  let deployosHermanos
   
   
   
@@ -89,7 +98,7 @@
   
   
   
-  let ambientLight = new THREE.DirectionalLight("#ffffff", 1);
+  let ambientLight = new THREE.AmbientLight("#ffffff", 1);
   ambientLight.position.set(-1, 2, 4);
   scene.add(ambientLight);
   
@@ -171,6 +180,63 @@
     person.lookVertical = false
     person.lookSpeed = 0.2
     person.constrainVertical = true
+
+    //UPLOADING 3D ELEMENTS
+    const gltfLoader = new GLTFLoader()
+    gltfLoader.load('./models/house/scene.gltf', (model) =>{
+      loadedModel = model.scene.children[0]
+      house1 = loadedModel.clone()
+      house1.name = "house1"
+      house1.scale.set(0.3,0.3,0.3)
+      house1.position.set(-250,0,25)
+
+      scene.add(house1)
+    })
+
+    // SHOPS
+    gltfLoader.load('./models/music-store/scene.gltf', (model) =>{
+      loadedModel = model.scene.children[0]
+      musicStore = loadedModel.clone()
+      musicStore.name = "musicStore"
+      musicStore.scale.set(15,15,15)
+      musicStore.position.set(-180,0,300)
+      musicStore.rotation.z += Math.PI /2
+
+      scene.add(musicStore)
+    })
+
+    gltfLoader.load('./models/small-game-store/scene.gltf', (model) =>{
+      loadedModel = model.scene.children[0]
+      gameStore = loadedModel.clone()
+      gameStore.name = "gameStore"
+      gameStore.scale.set(.5,.5,.5)
+      gameStore.position.set(0,0,-150)
+      gameStore.rotation.z = Math.PI
+      
+
+      scene.add(gameStore)
+    })
+
+    gltfLoader.load('./models/arcade-city/scene.gltf', (model) =>{
+      loadedModel = model.scene.children[0]
+      arcadeCity = loadedModel.clone()
+      arcadeCity.name = "arcadeCity"
+      arcadeCity.scale.set(3,3,3)
+      arcadeCity.position.set(450,0,-150)
+      
+      scene.add(arcadeCity)
+    })
+
+    gltfLoader.load('./models/deployos-hermanos/scene.gltf', (model) =>{
+      loadedModel = model.scene.children[0]
+      deployosHermanos = loadedModel.clone()
+      deployosHermanos.name = "deployosHermanos"
+      deployosHermanos.scale.set(10,10,10)
+      deployosHermanos.position.set(150,0.01,-150)
+      deployosHermanos.rotation.z += -Math.PI / 2   
+      scene.add(deployosHermanos)
+    })
+
   
     window.addEventListener("resize", resizeCallback);
   });
