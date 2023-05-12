@@ -1,0 +1,11 @@
+Model Information:
+* title:	UFO
+* source:	https://sketchfab.com/3d-models/ufo-cecddc35f2274d9288e42a7bced6c5eb
+* author:	Jack M (https://sketchfab.com/Jack_Miles)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "UFO" (https://sketchfab.com/3d-models/ufo-cecddc35f2274d9288e42a7bced6c5eb) by Jack M (https://sketchfab.com/Jack_Miles) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

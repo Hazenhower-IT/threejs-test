@@ -6,7 +6,7 @@
       
       <header class="bg-Color">
         <h2> Hi! I'm Alessio Aquilanti</h2>
-        <p>🚀 Welcome to my website!</p>
+        <p>🚀 Welcome to my Portfolio!</p>
       </header>
       
       
@@ -84,7 +84,7 @@
               <li><h4>-Firebase Hosting</h4></li>
               <li><h4>-Firebase Storage</h4></li>
               <li><h4>-Firebase Firestore Database</h4></li>
-              <li><h4>-FIrebase Authentication</h4></li>
+              <li><h4>-FIrebase Auth</h4></li>
             </ul>
           </li>
 
@@ -126,7 +126,7 @@
               <li><h4>-BulmaCSS</h4></li>
               <li><h4>-Firebase Hosting</h4></li>
               <li><h4>-Firebase Firestore Database</h4></li>
-              <li><h4>-FIrebase Authentication</h4></li>
+              <li><h4>-FIrebase Auth</h4></li>
             </ul>
           </li>
 
@@ -345,6 +345,12 @@
   let canvasRef = ref()
 
   let earth
+  let loadedModel
+  let ufo
+  let eagle
+  let spaceStation
+  
+  let satellite
 
   
   
@@ -372,9 +378,18 @@
   let loop = () => {
 
     earth.rotation.y += 0.005
-
     controls.update();
     renderer.render(scene, camera);
+
+    if(satellite){
+      satellite.rotation.z += 0.01
+      satellite.rotation.x += 0.01
+    }
+
+    if(ufo){
+      ufo.rotation.z += 0.01
+    }
+    
   };
 
   let addStar = () => {
@@ -395,6 +410,12 @@
     earth.rotation.x += 0.05
     earth.rotation.y += 0.075
     earth.rotation.z += 0.05
+
+    if(satellite){
+    satellite.rotation.x += 0.05
+    satellite.rotation.y += 0.075
+    satellite.rotation.z += 0.05
+    }
 
     camera.position.z = t * -0.01
     camera.position.x = t * -0.0002
@@ -436,11 +457,57 @@
     scene.add(earth)
 
     earth.position.z = 20;
-    earth.position.x = -10
-
+    earth.position.x = -8;
 
     controls = new OrbitControls(camera, canvasRef.value)
     controls.enableDamping = true
+
+    const gltfLoader = new GLTFLoader()
+    gltfLoader.load('./models/satellite/scene.gltf', (model) =>{
+      loadedModel = model.scene.children[0]
+      satellite = loadedModel.clone()
+      satellite.name = "satellite"
+      satellite.position.z = 7;
+      satellite.position.x = 1;
+
+      scene.add(satellite)
+    })
+
+    gltfLoader.load('./models/ufo2/scene.gltf', (model) =>{
+      loadedModel = model.scene.children[0]
+      ufo = loadedModel.clone()
+      ufo.name = "ufo"
+      ufo.position.z = 45;
+      ufo.position.x = 3;
+      ufo.position.y = -2;
+      ufo.rotation.x += 0.3
+      ufo.scale.set(0.01,0.01,0.01)
+      scene.add(ufo)
+    })
+
+    gltfLoader.load('./models/eagle-transporter/scene.gltf', (model) =>{
+      loadedModel = model.scene.children[0]
+      eagle = loadedModel.clone()
+      eagle.name = "eagle-transporter"
+      eagle.position.z = 55;
+      eagle.position.x = 3;
+      eagle.position.y = -3;
+      eagle.rotation.x += 0.08
+      eagle.rotation.z += Math.PI
+      eagle.scale.set(0.1,0.1,0.1)
+      scene.add(eagle)
+    })
+
+    gltfLoader.load('./models/ISS/scene.gltf', (model) =>{
+      loadedModel = model.scene.children[0]
+      spaceStation = loadedModel.clone()
+      spaceStation.name = "ISS"
+      spaceStation.position.z = 70;
+      spaceStation.position.x = -5;
+      spaceStation.position.y = -3;
+      spaceStation.scale.set(0.3,0.5,0.3)
+      scene.add(spaceStation)
+    })
 
   
   

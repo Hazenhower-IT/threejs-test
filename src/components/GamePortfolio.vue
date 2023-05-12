@@ -171,8 +171,6 @@
     person.lookVertical = false
     person.lookSpeed = 0.2
     person.constrainVertical = true
-    person.verticalMax = Math.PI / 2.3
-    person.verticalMin = Math.PI / 1.7
   
     window.addEventListener("resize", resizeCallback);
   });
@@ -182,10 +180,14 @@
   });
   </script>
   
-  <style>
-    canvas {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
+<style>
+  
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;  
+}
   </style>
