@@ -45,7 +45,20 @@
 
         <ul style="list-style: none;">
           
-          
+          <li>
+            <h3 class="remove-bg"><a href="https://modern-musa.web.app/" target="_blank">Modern Musa -  🛠️WORK IN PROGRESS🛠️</a></h3>
+            <h4>An Immersive Experience Website For a Digital Artist</h4>
+            <h4>Technologies:</h4>
+            <ul style="list-style:none; background-color: unset;">
+              <li><h4>-Vue3</h4></li>
+              <li><h4>-ThreeJS</h4></li>
+              <li><h4>-Firebase Hosting</h4></li>
+            </ul>
+          </li>
+
+          <hr/>
+
+          <!--MODIFICA FINO QUI-->
           <li>
             <h3 class="remove-bg"><a href="https://single-page-app-3d.web.app/" target="_blank">Single Page App with 3D element</a></h3>
             <h4>An Example Of Simple Page Application with 3D Elements Inside</h4>
@@ -128,6 +141,12 @@
               <li><h4>-Firebase Firestore Database</h4></li>
               <li><h4>-FIrebase Auth</h4></li>
             </ul>
+          </li>
+
+          <hr/>
+
+          <li>
+            <h3 style="background-color: unset;">Want To See More? Check <a href="https://github.com/Hazenhower-IT?tab=repositories" target="_blank">My GitHub!</a></h3>
           </li>
 
 
@@ -261,10 +280,10 @@
         <h2>💼 Work History</h2>
         <hr/>
        
-          <h3>Caffè Mattia - Barista</h3>
+          <h3>Caffè Mattia - Barman</h3>
           <h4>August 2019 | September 2022</h4>
           <ul style="background-color: unset;">
-            <li>Cashier and attendant for services such as phone top-ups and bill payments.</li>
+            <li>Cashier and attendant for services such as phone recharge and bill payments.</li>
             <li>Attendant at the customer relations and preparation of non-alcoholic drinks, liquors and cocktails.</li>
             <li>Warehouse management and merchandise arrangement.</li>
             <li>Training and supervision of new staff members.</li>
@@ -504,7 +523,7 @@
       loadedModel = model.scene.children[0]
       spaceStation = loadedModel.clone()
       spaceStation.name = "ISS"
-      spaceStation.position.z = 70;
+      spaceStation.position.z = 75;
       spaceStation.position.x = -5;
       spaceStation.position.y = -3;
       spaceStation.scale.set(0.3,0.5,0.3)
