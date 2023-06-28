@@ -45,10 +45,22 @@
         <hr/>
 
         <ul style="list-style: none;">
+
+          <li>
+            <h3 class="remove-bg"><a href="https://play.unity.com/mg/other/my-new-microgame-10069" target="_blank">Jackie Junks</a></h3>
+            <h4>Simple 3D WegbGL Game Like "Fruit ninja"</h4>
+            <h4>Technologies:</h4>
+            <ul style="list-style:none; background-color: unset;">
+              <li><h4>Unity</h4></li>
+            </ul>
+          </li>
+
+          <hr/>
           
           <li>
             <h3 class="remove-bg"><a href="https://modern-musa.web.app/" target="_blank">Modern Musa -  🛠️WORK IN PROGRESS🛠️</a></h3>
             <h4>An Immersive Experience Website For a Digital Artist</h4>
+            <h4>Click on the Illustration button on the Navbar to see the demo of the 3D Art Gallery</h4>
             <h4>Technologies:</h4>
             <ul style="list-style:none; background-color: unset;">
               <li><h4>-Vue3</h4></li>
@@ -60,10 +72,10 @@
           <hr/>
 
           <!--MODIFICA FINO QUI-->
+
           <li>
             <h3 class="remove-bg"><a href="https://single-page-app-3d.web.app/" target="_blank">Single Page App with 3D element</a></h3>
             <h4>An Example Of Simple Page Application with 3D Elements Inside</h4>
-            <h4 style="padding:10px;">I Know that the 3D models are not well positioned, i'm at work for creating a reusable gui component for fast element editing</h4>
             <h4>Technologies:</h4>
             <ul style="list-style:none; background-color: unset;">
               <li><h4>-Vue3</h4></li>
@@ -73,6 +85,7 @@
           </li>
 
           <hr/>
+        
 
           <li>
             <h3 style="background-color: unset;"><RouterLink to="/game" target="_blank">Game Portfolio - 🛠️WORK IN PROGRESS🛠️</RouterLink></h3>
@@ -238,7 +251,7 @@
         <hr/>
 
         <div>
-          <h3><a href="#">Applied Data Science with Python - Level 2</a></h3>
+          <h3><a href="https://www.credly.com/badges/ee16d82f-8bd3-477b-a292-a3d89a3db90d">Applied Data Science with Python - Level 2</a></h3>
           <h4>Released By IMB | 01/2023 </h4>
         </div>
 
@@ -263,6 +276,21 @@
           <h4>Released By Google Digital Training | 03/2023</h4>
           <h4>Credential ID: YTG Y3Y SNK</h4>
         </div>
+
+        <hr/>
+
+        <div>
+          <h3><a href="https://www.credly.com/go/6wP0zMHy">Unity Essentials Pathway</a></h3>
+          <h4>Released By Unity Technologies | 06/2023</h4>
+        </div>
+        
+        <hr/>
+
+        <div>
+          <h3><a href="https://www.credly.com/go/LEahbAtn">Unity Junior Programmer</a></h3>
+          <h4>Released By Unity Technologies | 06/2023</h4>
+        </div>
+        
       </section>
 
  
