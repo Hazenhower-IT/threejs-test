@@ -68,7 +68,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
   let box2
   
   let controls
-  let orbitControls
+  //let orbitControls
   const clock = new THREE.Clock()
   
   let loadedModel
@@ -140,7 +140,7 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
   sampietrino.wrapT = THREE.RepeatWrapping
   sampietrino.repeat.set(15,15)
   const plane = new THREE.Mesh(
-    new THREE.PlaneGeometry(2500,2500),
+    new THREE.PlaneGeometry(1000,1000),
     new THREE.MeshPhongMaterial({map:sampietrino , side: THREE.DoubleSide})
   )
   plane.rotation.x = -0.5 * Math.PI
@@ -249,9 +249,9 @@ function updateMovement(delta) {
 let loop = () => {
   const delta = clock.getDelta()
 
-  
- // updateMovement(delta)
- orbitControls.update()
+  //Riattiva dopo posizionamento Palazzi
+  updateMovement(delta)
+ //orbitControls.update()
 
   let cameraPos = camera.position
 
@@ -311,9 +311,9 @@ let resizeCallback = () => {
     scene.add(box2)
   
     //RIATTIVA DOPO POSIZIONAMENTO PALAZZI
-    //controls = new PointerLockControls(camera, document.body)
+    controls = new PointerLockControls(camera, document.body)
 
-    orbitControls = new OrbitControls(camera, canvasRef.value)
+    //orbitControls = new OrbitControls(camera, canvasRef.value)
 
 
     //Lock the pointer( activate controls ) and start the experience hiding the menu
@@ -321,7 +321,7 @@ let resizeCallback = () => {
       //lock the pointer
      
       //RIATTIVA DOPO POSIZIONAMENTO PALAZZI
-      // controls.lock()
+       controls.lock()
       
       
       //hide the menu
@@ -350,7 +350,7 @@ let resizeCallback = () => {
     }
 
     //RIATTIVA DOPO POSIZIONAMENTO PALAZZI
-   // controls.addEventListener("unlock", showMenu)
+    controls.addEventListener("unlock", showMenu)
 
 
     //UPLOADING 3D ELEMENTS
@@ -376,13 +376,24 @@ let resizeCallback = () => {
       house1 = loadedModel.clone()
       house1.name = "house1"
       house1.scale.set(0.35,0.35,0.35)
-      house1.position.set(-250,0,25)
+      house1.position.set(345, 0, 355)
+      house1.rotation.z = Math.PI
       scene.add(house1)
 
-      //GUI
-      // gui.add(house1.position, "x").min(-1000).max(1000).step(0.001)
-      // gui.add(house1.position, "y").min(-10).max(10).step(0.001)
-      // gui.add(house1.position, "z").min(-1000).max(1000).step(0.001)
+      // GUI
+      /*
+      gui.add(house1.position, "x").min(-1000).max(1000).step(0.001).name("HousePosX")
+      gui.add(house1.position, "y").min(-10).max(10).step(0.001).name("HousePosY")
+      gui.add(house1.position, "z").min(-1000).max(1000).step(0.001).name("HousePosZ")
+
+      gui.add(house1.scale, "x").min(0).max(50).step(0.001).name("scaleX")
+      gui.add(house1.scale, "y").min(0).max(50).step(0.0001).name("scaleY")
+      gui.add(house1.scale, "z").min(0).max(50).step(0.001).name("scalez")
+
+      gui.add(house1.rotation, "x").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation X");
+      gui.add(house1.rotation, "y").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation Y");
+      gui.add(house1.rotation, "z").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation Z");
+      */
     })
     
 
@@ -392,10 +403,17 @@ let resizeCallback = () => {
       musicStore = loadedModel.clone()
       musicStore.name = "musicStore"
       musicStore.scale.set(20,20,20)
-      musicStore.position.set(-180,0,300)
+      musicStore.position.set(-314, 0, 517.39)
       musicStore.rotation.z += Math.PI /2
 
       scene.add(musicStore)
+
+      // GUI
+       /*
+      gui.add(musicStore.position, "x").min(-1000).max(1000).step(0.001).name("musicStorePosX")
+      gui.add(musicStore.position, "y").min(-10).max(10).step(0.001).name("musicStorePosY")
+      gui.add(musicStore.position, "z").min(-1000).max(1000).step(0.001).name("musicStorePosZ")
+      */
     })
 
     // MODERN MUSA
@@ -404,11 +422,17 @@ let resizeCallback = () => {
       gameStore = loadedModel.clone()
       gameStore.name = "gameStore"
       gameStore.scale.set(.6,.6,.6)
-      gameStore.position.set(-100,0,-150)
-      gameStore.rotation.z = Math.PI
+      gameStore.position.set(-455 , 0, 171.4)
+      gameStore.rotation.z +=  -Math.PI / 2
       
-
       scene.add(gameStore)
+
+      // GUI
+      /*
+      gui.add(gameStore.position, "x").min(-1000).max(1000).step(0.001).name("gameStorePosX")
+      gui.add(gameStore.position, "y").min(-10).max(10).step(0.001).name("gameStorePosY")
+      gui.add(gameStore.position, "z").min(-1000).max(1000).step(0.001).name("gameStorePosZ")
+      */
     })
 
 
@@ -418,10 +442,17 @@ let resizeCallback = () => {
       arcadeCity = loadedModel.clone()
       arcadeCity.name = "arcadeCity"
       arcadeCity.scale.set(1.5,1.5,1.5)
-      arcadeCity.position.set(350,27,10)
+      arcadeCity.position.set(350, 27, 171.4)
       arcadeCity.rotation.z += -Math.PI /2
       
       scene.add(arcadeCity)
+
+      // GUI
+      /*  
+      gui.add(arcadeCity.position, "x").min(-1000).max(1000).step(0.001).name("arcadeCityPosX")
+      gui.add(arcadeCity.position, "y").min(-10).max(10).step(0.001).name("arcadeCityPosY")
+      gui.add(arcadeCity.position, "z").min(-1000).max(1000).step(0.001).name("arcadeCityPosZ")
+      */
     })
 
 
@@ -431,9 +462,16 @@ let resizeCallback = () => {
       deployosHermanos = loadedModel.clone()
       deployosHermanos.name = "deployosHermanos"
       deployosHermanos.scale.set(15,15,15)
-      deployosHermanos.position.set(150,0.01,-150)
+      deployosHermanos.position.set(-217.8 ,0.01, -1.64)
       deployosHermanos.rotation.z += -Math.PI / 2   
       scene.add(deployosHermanos)
+
+      // GUI
+      /*
+      gui.add(deployosHermanos.position, "x").min(-1000).max(1000).step(0.001).name("deployosHermanosPosX")
+      gui.add(deployosHermanos.position, "y").min(-10).max(10).step(0.001).name("deployosHermanosPosY")
+      gui.add(deployosHermanos.position, "z").min(-1000).max(1000).step(0.001).name("deployosHermanosPosZ")
+      */
     })
 
     // Pizzeria - mancini-pizza-beer
@@ -441,10 +479,24 @@ let resizeCallback = () => {
       loadedModel = model.scene.children[0]
       manciniPizza = loadedModel.clone()
       manciniPizza.name = "manciniPizza"
-      manciniPizza.scale.set(15,15,20)
-      manciniPizza.position.set(150,0.01,50)
+      manciniPizza.scale.set(25,20,35)
+      manciniPizza.position.set(344.4 ,0.01, 1.623)
       manciniPizza.rotation.z += -Math.PI / 2   
       scene.add(manciniPizza)
+
+      // GUI
+       
+      gui.add(manciniPizza.position, "x").min(-1000).max(1000).step(0.001).name("manciniPizzaPosX")
+      gui.add(manciniPizza.position, "y").min(-10).max(10).step(0.001).name("manciniPizzaPosY")
+      gui.add(manciniPizza.position, "z").min(-1000).max(1000).step(0.001).name("manciniPizzaPosZ")
+
+      gui.add(manciniPizza.scale, "x").min(0).max(50).step(0.001).name("scaleX")
+      gui.add(manciniPizza.scale, "y").min(0).max(50).step(0.0001).name("scaleY")
+      gui.add(manciniPizza.scale, "z").min(0).max(50).step(0.001).name("scalez")
+
+      gui.add(manciniPizza.rotation, "x").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation X");
+      gui.add(manciniPizza.rotation, "y").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation Y");
+      gui.add(manciniPizza.rotation, "z").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation Z");
     })
 
     // Deposito Bagagli - buster-brown-shoe-store(?)
@@ -452,15 +504,18 @@ let resizeCallback = () => {
       loadedModel = model.scene.children[0]
       depositoBagagli = loadedModel.clone()
       depositoBagagli.name = "depositoBagagli"
-      depositoBagagli.scale.set(15,15,20)
-      depositoBagagli.position.set(150,0.01,400)
-      depositoBagagli.rotation.z += -Math.PI / 2   
+      depositoBagagli.scale.set(10.9, 7.7, 24.419)
+      depositoBagagli.position.set(171.4 , 2.36, -230)
+      depositoBagagli.rotation.z += -Math.PI   
       scene.add(depositoBagagli)
 
-      gui.add(depositoBagagli.position, "x").min(-1000).max(1000).step(0.001).name("posX")
-      gui.add(depositoBagagli.position, "y").min(-10).max(10).step(0.001).name("posY")
-      gui.add(depositoBagagli.position, "z").min(-1000).max(1000).step(0.001).name("posX")
+      // GUI
+      /*
+      gui.add(depositoBagagli.position, "x").min(-1000).max(1000).step(0.001).name("BagagliposX")
+      gui.add(depositoBagagli.position, "y").min(-10).max(10).step(0.001).name("BagagliposY")
+      gui.add(depositoBagagli.position, "z").min(-1000).max(1000).step(0.001).name("BagagliposZ")
 
+      
       gui.add(depositoBagagli.scale, "x").min(0).max(50).step(0.001).name("scaleX")
       gui.add(depositoBagagli.scale, "y").min(0).max(50).step(0.0001).name("scaleY")
       gui.add(depositoBagagli.scale, "z").min(0).max(50).step(0.001).name("scalez")
@@ -468,6 +523,8 @@ let resizeCallback = () => {
       gui.add(depositoBagagli.rotation, "x").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation X");
       gui.add(depositoBagagli.rotation, "y").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation Y");
       gui.add(depositoBagagli.rotation, "z").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation Z");
+      */
+     
     })
 
   
