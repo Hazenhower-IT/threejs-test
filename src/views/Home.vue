@@ -51,7 +51,7 @@
             <h4>Simple 3D WegbGL Game Like "Fruit ninja"</h4>
             <h4>Technologies:</h4>
             <ul style="list-style:none; background-color: unset;">
-              <li><h4>Unity</h4></li>
+              <li><h4>-Unity</h4></li>
             </ul>
           </li>
 
