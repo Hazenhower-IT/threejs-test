@@ -19,13 +19,14 @@
         <hr/>
         <p>
           Hardworking and motivated, I have a predisposition for the study of computer science subjects and the use of technological tools and  
-          a good attitude towards teamwork and managing a work group thanks to the experience gained by training new employees. 
+          a good attitude towards teamwork and managing a work group thanks to the experience gained by training during the previous work, and managing / work on IT projects with other people.  . 
           My ideal job position is in a structure that allows me to test myself and offers me the opportunity for professional and educational 
           growth. I consider myself both flexible and determined, and it is precisely determination that allows me to achieve my goals.
 
-          I have embarked on a course of study that has already led me to obtain my first certifications. Currently, my training is focused on 
-          the development of cutting-edge websites and web apps with 3D elements, highly scalable and dynamic using cloud services, and 
-          the development of Machine Learning and Cloud Native AI solutions.
+          I have embarked on a course of study that has already led me to obtain my first certifications. 
+          Currently my training is focus on the study of technologies that are bringing great changes in all sectors such as cloud computing, machine learning, artificial intelligence, AR, VR, and the integration of 3D spaces and elements within a website .
+
+
         </p>
 
       </section>
@@ -35,7 +36,7 @@
 
         <hr/>
 
-        <h3>VueJS3 | Pinia | ThreeJS | Firebase | Firestore Database | GitHub | CI-CD Pipeline | Cloud Computing | Azure Cloud | Artificial Intelligence | Python | Data Science | Javascript | HTML | CSS | Social Media | Outlook | Gmail | Digital Marketing </h3>
+        <h3>Unity | C# | Three.js | VueJs3 | Pinia | Dynamic Web App | Pipeline per CD-CI | GitHub | Cloud Computing | Firebase | Azure Cloud | Azure Cognitive Services| Artificial Intelligence | Python | Data Science | NoSQL Database | JavaScript | HTML | CSS | Social Media | Outlook | Gmail | Digital Marketing</h3>
       </section>
 
       <section class="left bg-Color">
@@ -74,7 +75,7 @@
           <hr/>
 
           <li>
-            <h3 style="background-color: unset;"><a href="https://hazenhower-portfolio.web.app/game/" target="_blank">Game Portfolio - 🛠️WORK IN PROGRESS🛠️</a></h3>
+            <h3 style="background-color: unset;"><RouterLink to="/game" target="_blank">Game Portfolio - 🛠️WORK IN PROGRESS🛠️</RouterLink></h3>
             <h4>My Personal Interactive Portfolio Idea </h4>
             <h4>Technologies:</h4>
             <ul style="list-style:none; background-color: unset;">
@@ -279,6 +280,16 @@
       <section class="left" >
         <h2>💼 Work History</h2>
         <hr/>
+
+          <h3>Lorenzo Federici Guitarist | Web Site | Full Stack Development</h3>
+            <h4>March | April 2023</h4>
+            <ul style="background-color: unset;">
+              <li>Design and Develop a portfolio website for Lorenzo Federici (a guitarist) and his recording studio </li>
+              <li>Design and development of a database using firebase Cloud + Admin interface for managing the media like photo and video</li>
+              <li>Technologies used: VueJs3 | Pinia | BulmaCSS | Firebase Auth | Firebase Hosting | Firestore Database | Firebase Storage</li>
+            </ul>
+        
+          <hr/>
        
           <h3>Caffè Mattia - Barman</h3>
           <h4>August 2019 | September 2022</h4>
