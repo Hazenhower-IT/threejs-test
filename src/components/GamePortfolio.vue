@@ -67,21 +67,36 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
   
   let box2
   
+  //Riattiva dopo aver posizionato i palazzi
   let controls
   //let orbitControls
+  
   const clock = new THREE.Clock()
   
   let loadedModel
 
   //Buildings
   let house1
-  //Shops
+  //Shops models
   let musicStore
   let gameStore
   let arcadeCity
   let deployosHermanos
   let manciniPizza
   let depositoBagagli
+
+
+  //Parks Element Model
+  let parco
+
+
+
+  //Street Element models
+  let strada
+  let fontana
+  let strada1
+  let stradaCurva
+  let stradaT
 
   //player variables
   let moveSpeed
@@ -251,7 +266,7 @@ let loop = () => {
 
   //Riattiva dopo posizionamento Palazzi
   updateMovement(delta)
- //orbitControls.update()
+  //orbitControls.update()
 
   let cameraPos = camera.position
 
@@ -312,7 +327,6 @@ let resizeCallback = () => {
   
     //RIATTIVA DOPO POSIZIONAMENTO PALAZZI
     controls = new PointerLockControls(camera, document.body)
-
     //orbitControls = new OrbitControls(camera, canvasRef.value)
 
 
@@ -485,7 +499,7 @@ let resizeCallback = () => {
       scene.add(manciniPizza)
 
       // GUI
-       
+      /*
       gui.add(manciniPizza.position, "x").min(-1000).max(1000).step(0.001).name("manciniPizzaPosX")
       gui.add(manciniPizza.position, "y").min(-10).max(10).step(0.001).name("manciniPizzaPosY")
       gui.add(manciniPizza.position, "z").min(-1000).max(1000).step(0.001).name("manciniPizzaPosZ")
@@ -497,6 +511,7 @@ let resizeCallback = () => {
       gui.add(manciniPizza.rotation, "x").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation X");
       gui.add(manciniPizza.rotation, "y").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation Y");
       gui.add(manciniPizza.rotation, "z").min(-Math.PI).max(Math.PI).step(0.01).name("Rotation Z");
+      */
     })
 
     // Deposito Bagagli - buster-brown-shoe-store(?)
@@ -526,6 +541,88 @@ let resizeCallback = () => {
       */
      
     })
+
+    gltfLoader.load('/models/city-park-at-sunset/scene.gltf', (model)=>{
+      loadedModel = model.scene.children[0]
+      parco = loadedModel.clone()
+      parco.name = "parco"
+      parco.scale.set(5, 5, 5)
+      parco.position.set(-347.6 , 2.36, -326)
+      //parco.rotation.z += -Math.PI   
+      scene.add(parco)
+
+      // GUI
+      /* 
+      gui.add(parco.position, "x").min(-1000).max(1000).step(0.001).name("parcoPosX")
+      gui.add(parco.position, "y").min(-10).max(10).step(0.001).name("parcoPosY")
+      gui.add(parco.position, "z").min(-1000).max(1000).step(0.001).name("parcoPosZ")
+
+      
+      gui.add(parco.scale, "x").min(0).max(50).step(0.001).name("parcoScaleX")
+      gui.add(parco.scale, "y").min(0).max(50).step(0.0001).name("parcoScaleY")
+      gui.add(parco.scale, "z").min(0).max(50).step(0.001).name("parcoScalez")
+
+      gui.add(parco.rotation, "x").min(-Math.PI).max(Math.PI).step(0.01).name("parcoRotation X");
+      gui.add(parco.rotation, "y").min(-Math.PI).max(Math.PI).step(0.01).name("parcoRotation Y");
+      gui.add(parco.rotation, "z").min(-Math.PI).max(Math.PI).step(0.01).name("parcoRotation Z");
+      */
+    })
+
+    gltfLoader.load('/models/medieval-fountain/scene.gltf', (model)=>{
+      loadedModel = model.scene.children[0]
+      fontana = loadedModel.clone()
+      fontana.name = "fontana"
+      fontana.scale.set(5, 5, 5)
+      fontana.position.set(-347.6 , 2.36, -326)
+      //parco.rotation.z += -Math.PI   
+      scene.add(fontana)
+
+      // GUI
+      /*
+      gui.add(fontana.position, "x").min(-1000).max(1000).step(0.001).name("fontanaPosX")
+      gui.add(fontana.position, "y").min(-10).max(10).step(0.001).name("fontanaPosY")
+      gui.add(fontana.position, "z").min(-1000).max(1000).step(0.001).name("fontanaPosZ")
+
+      gui.add(fontana.scale, "x").min(0).max(50).step(0.001).name("fontanaScaleX")
+      gui.add(fontana.scale, "y").min(0).max(50).step(0.0001).name("fontanaScaleY")
+      gui.add(fontana.scale, "z").min(0).max(50).step(0.001).name("fontanaScalez")
+
+      gui.add(fontana.rotation, "x").min(-Math.PI).max(Math.PI).step(0.01).name("fontanaRotation X");
+      gui.add(fontana.rotation, "y").min(-Math.PI).max(Math.PI).step(0.01).name("fontanaRotation Y");
+      gui.add(fontana.rotation, "z").min(-Math.PI).max(Math.PI).step(0.01).name("fontanaRotation Z");
+      */
+    })
+
+    
+
+    /* 
+    gltfLoader.load('/models/road-template/scene.gltf', (model)=>{
+      loadedModel = model.scene.children[0]
+      strada = loadedModel.clone()
+      strada.name = "strada"
+      strada.scale.set(5, 5, 5)
+      strada.position.set(-347.6 , 2.36, -326)
+      //parco.rotation.z += -Math.PI   
+      scene.add(strada)
+
+      // GUI
+      
+      gui.add(strada.position, "x").min(-1000).max(1000).step(0.001).name("stradaPosX")
+      gui.add(strada.position, "y").min(-10).max(10).step(0.001).name("stradaPosY")
+      gui.add(strada.position, "z").min(-1000).max(1000).step(0.001).name("stradaPosZ")
+
+      
+      gui.add(strada.scale, "x").min(0).max(50).step(0.001).name("stradaScaleX")
+      gui.add(strada.scale, "y").min(0).max(50).step(0.0001).name("stradaScaleY")
+      gui.add(strada.scale, "z").min(0).max(50).step(0.001).name("stradaScalez")
+
+      gui.add(strada.rotation, "x").min(-Math.PI).max(Math.PI).step(0.01).name("stradaRotation X");
+      gui.add(strada.rotation, "y").min(-Math.PI).max(Math.PI).step(0.01).name("stradaRotation Y");
+      gui.add(strada.rotation, "z").min(-Math.PI).max(Math.PI).step(0.01).name("stradaRotation Z");
+      
+      
+    })
+    */
 
   
     window.addEventListener("resize", resizeCallback);

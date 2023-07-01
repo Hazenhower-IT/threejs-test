@@ -90,6 +90,16 @@
           <li>
             <h3 style="background-color: unset;"><RouterLink to="/game" target="_blank">Game Portfolio - 🛠️WORK IN PROGRESS🛠️</RouterLink></h3>
             <h4>My Personal Interactive Portfolio Idea </h4>
+            <h4>Incoming Features:</h4>
+            <ul style="list-style:none; background-color: unset;">
+              <li><h4>-Adding "Jump" option to the controller </h4></li>
+              <li><h4>-Adding Collider</h4></li>
+              <li><h4>-Adding Physics to the world</h4></li>
+              <li><h4>-Adding Interaction with element within the world</h4></li>
+              <li><h4>-Adding some elements that shows examples of threejs and physics</h4></li>
+              <li><h4>-Adding Props</h4></li>
+              <li><h4>-Review and optimize code to give users a smoother and better experience</h4></li>
+            </ul>
             <h4>Technologies:</h4>
             <ul style="list-style:none; background-color: unset;">
               <li><h4>-Vue3</h4></li>
